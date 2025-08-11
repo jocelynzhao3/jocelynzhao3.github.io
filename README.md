@@ -1,2 +1,1 @@
-# jocelynzhao3.github.io
-Personal website
+# Jocelyn's personal webby
