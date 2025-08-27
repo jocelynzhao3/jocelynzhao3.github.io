@@ -1,0 +1,61 @@
+<!-- resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Resume</title>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('media/forbidden_city.jpg');">
+<header>
+  <nav class="flex justify-between items-center py-4 bg-black/80 text-white fixed w-full top-0 font-serif z-50 px-6">
+
+    <div class="flex items-center">
+      <button id="toggleBtn" class="flex items-center justify-center bg-black/40 rounded-full hover:bg-black/60 transition" title="Show/Hide Info">
+      <svg width="12px" height="12px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye text-white">
+        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+      </svg>
+    </button>
+    </div>
+
+    <div class="flex justify-center space-x-6">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="food.html">Eats</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="w-8"></div>
+  </nav>
+</header>
+
+<div class="flex flex-col items-center px-4 pt-24 pb-16" id="centralDiv">
+  <div class="bg-white/30 backdrop-blur-md p-6 rounded-xl max-w-2xl w-full shadow-lg">
+    <iframe
+      src="media/resume.pdf#view=FitH&toolbar=0&navpanes=0"
+      class="w-full min-h-[90vh] rounded-lg shadow-md"
+      title="Resume"
+    ></iframe>
+  </div>
+</div>
+<footer class="flex justify-center py-4 bg-black/80 text-white font-serif fixed bottom-0 w-full">
+  <p>📍 Forbidden City, Beijing, China</p>
+</footer>
+
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const centralDiv = document.getElementById('centralDiv');
+  let visible = true;
+
+  toggleBtn.addEventListener('click', () => {
+    visible = !visible;
+    centralDiv.style.display = visible ? 'flex' : 'none';
+  });
+</script>
+
+</body>
+</html>

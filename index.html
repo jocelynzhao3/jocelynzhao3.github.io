@@ -1,164 +1,60 @@
-<!doctype html>
+<!-- about.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jocelyn Zhao</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#00b4d8',
-            accent: '#3a86ff'
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    .glass {
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-  </style>
+  <title>Jocelyn Zhao</title>
 </head>
-<body class="bg-gradient-to-br from-white via-blue-50 to-blue-200 text-gray-800 font-sans">
-<header class="py-6 glass shadow-lg">
-  <div class="max-w-4xl mx-auto flex justify-center items-center px-4">
-    <nav class="flex items-center gap-6 text-sm">
-      <a href="#about" class="hover:text-primary transition">About</a>
-      <a href="#resume" class="hover:text-primary transition">Resume</a>
-      <a href="#projects" class="hover:text-primary transition">Projects</a>
-      <a href="#education" class="hover:text-primary transition">Education</a>
-      <a href="#contact" class="hover:text-primary transition">Contact</a>
-    </nav>
-  </div>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('media/scottsbluff.jpg');">
+<header>
+  <nav class="flex justify-between items-center py-4 bg-black/80 text-white fixed w-full top-0 font-serif z-50 px-6">
+
+    <div class="flex items-center">
+      <button id="toggleBtn" class="flex items-center justify-center bg-black/40 rounded-full hover:bg-black/60 transition" title="Show/Hide Info">
+      <svg width="12px" height="12px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye text-white">
+        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+      </svg>
+    </button>
+    </div>
+
+    <div class="flex justify-center space-x-6">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="food.html">Eats</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="w-8"></div>
+  </nav>
 </header>
 
-  <main class="max-w-4xl mx-auto px-4">
-    <section id="about">
-    <section class="py-20 text-left">
-      <h2 class="text-4xl font-light mb-4">Hi there, I'm <span class="text-primary">Jocelyn</span></h2>
-      <div class="flex gap-6 mt-6 text-primary">
-        <a href="mailto:zhaojocelyn300@gmail.com" class="hover:text-accent" title="Email">
-          <i data-lucide="mail"></i>
-        </a>
-        <a href="https://linkedin.com/in/zhaojocelyn/" target="_blank" class="hover:text-accent" title="LinkedIn">
-          <i data-lucide="linkedin"></i>
-        </a>
-        <a href="https://github.com/jocelynzhao3" target="_blank" class="hover:text-accent" title="GitHub">
-          <i data-lucide="github"></i>
-        </a>
-      </div>
-    </section>
+<div class="flex items-center justify-center min-h-screen text-center px-4" id="centralDiv">
+  <div class="bg-white/80 p-10 rounded-2xl max-w-2xl">
+    <h1 class="text-4xl font-serif mb-4">Hi there, I'm Jocelyn</h1>
+    <p class="text-sm">I’m a junior at MIT studying AI and Decision Making (6-4). I like to keep my environment smarter than me, so I can constantly learn from it! I build software and machine learning models—like game agents that outplay me—and create tools that make life easier for others. I also lead strategy for MIT’s solar car team, and in my free time, I plan dorm events or practice my Chinese by binge-watching TV shows.</p>
+  </div>
+</div>
 
-    <section class="py-16 glass rounded-xl shadow-lg px-6 mb-10">
-      <h3 class="text-2xl font-medium mb-4">About Me</h3>
-      <p class="text-gray-700 leading-relaxed">I’m a junior at MIT studying AI and Decision Making (6-4). I like to keep my environment smarter than me, so I build software and machine learning models—like game agents that outplay me—and lead the strategy side of MIT's solar car team. In my free time, I’m focused on improving my Chinese (by watching TV shows of course!)</p>
-    </section>
-    </section>
+<footer class="flex justify-center py-4 bg-black/80 text-white font-serif fixed bottom-0 w-full">
+  <p>📍 Scotts Bluff National Monument, Gering, Nebraska</p>
+</footer>
 
-    <section id="resume" class="py-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-      <div class="md:col-span-1">
-        <h3 class="text-2xl font-medium mb-4">Resume</h3>
-        <p class="mb-4">You can download my resume below or view it directly here on the page.</p>
-        <a href="resume.pdf" download class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-accent transition flex justify-center">Download Resume</a>
-      </div>
-      <div class="md:col-span-2 glass rounded-xl shadow-lg p-4">
-        <iframe src="resume.pdf" class="w-full h-[500px]" title="Resume"></iframe>
-      </div>
-    </div>
-  </section>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const centralDiv = document.getElementById('centralDiv');
+  let visible = true;
 
-    <section id="projects" class="py-16">
-    <h3 class="text-2xl font-medium mb-8">Projects</h3>
-    <div class="space-y-6">
-     <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition grid md:grid-cols-2 gap-4 items-center">
-      <div>
-        <h4 class="text-primary font-normal">2048 Reinforcement Learning</h4>
-        <p class="text-gray-700 text-sm mt-2">Build agent to play 2048 with PyTorch, OpenAI gym, numpy, pandas</p>
-      </div>
-     <div class="flex justify-end">
-        <img src="media/play.gif" alt="2048 gameplay" class="rounded-lg shadow-lg w-48 h-auto" />
-     </div>
-    </div>
-      <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition grid md:grid-cols-2 gap-4 items-center">
-        <div>
-          <h4 class="text-primary font-normal">BattleLingo</h4>
-          <p class="text-gray-700 text-sm mt-2">Live PVP typing game to make language learning fun! Built with MongoDB, Express.js, React, Node.js (MERN) and socket.io</p>
-        </div>
-        <img src="media/lingo.gif" alt="BattleLingo gameplay" class="rounded-lg shadow-lg max-w-full h-auto" />
-      </div>
-    </div>
-  </section>
+  toggleBtn.addEventListener('click', () => {
+    visible = !visible;
+    centralDiv.style.display = visible ? 'flex' : 'none';
+  });
+</script>
 
-    <section id="education" class="py-16">
-      <h3 class="text-2xl font-medium mb-8">Education</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h4 class="text-primary font-normal">Freshman fall</h4>
-          <p class="text-gray-700 text-sm mt-2">6.100A Intro to programming in Python</p>
-          <p class="text-gray-700 text-sm mt-2">6.100B Intro to data science</p>
-          <p class="text-gray-700 text-sm mt-2">18.02 Multivariable calculus</p>
-          <p class="text-gray-700 text-sm mt-2">8.01 Physics I</p>
-          <p class="text-gray-700 text-sm mt-2">5.111 Chemistry</p>
-        </div>
-        <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h4 class="text-primary font-normal">Freshman spring</h4>
-          <p class="text-gray-700 text-sm mt-2">6.1010 Programming fundamentals</p>
-          <p class="text-gray-700 text-sm mt-2">6.1200 Discrete math</p>
-          <p class="text-gray-700 text-sm mt-2">6.1903 Intro C & Assembly</p>
-          <p class="text-gray-700 text-sm mt-2">8.02 Physics II</p>
-          <p class="text-gray-700 text-sm mt-2">24.02 Moral problems and the good life</p>
-        </div>
-        <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h4 class="text-primary font-normal">Sophomore fall</h4>
-          <p class="text-gray-700 text-sm mt-2">6.1210 Intro algorithms</p>
-          <p class="text-gray-700 text-sm mt-2">6.1910 Computational stuctures</p>
-          <p class="text-gray-700 text-sm mt-2">18.06 Linear algebra</p>
-          <p class="text-gray-700 text-sm mt-2">18.03 Differential equations</p>
-          <p class="text-gray-700 text-sm mt-2">7.012 Intro biology</p>
-        </div>
-        <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h4 class="text-primary font-normal">Sophomore spring</h4>
-          <p class="text-gray-700 text-sm mt-2">6.1220 Design and analysis of algorithms</p>
-          <p class="text-gray-700 text-sm mt-2">6.3900 Intro machine learning</p>
-          <p class="text-gray-700 text-sm mt-2">6.1020 Software construction</p>
-          <p class="text-gray-700 text-sm mt-2">18.600 Probability and random variables</p>
-          <p class="text-gray-700 text-sm mt-2">21T.248 Comtemporary American theater</p>
-        </div>
-        <div class="glass p-6 rounded-xl shadow-md hover:shadow-xl transition">
-          <h4 class="text-primary font-normal">Junior fall</h4>
-          <p class="text-gray-700 text-sm mt-2">6.7960 Deep learning</p>
-          <p class="text-gray-700 text-sm mt-2">6.4210 Robotic manipulation</p>
-          <p class="text-gray-700 text-sm mt-2">6.4610 Natural language processing</p>
-          <p class="text-gray-700 text-sm mt-2">21G.107 Streamlined Chinese I</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-16 glass rounded-xl shadow-lg px-6 mt-10">
-      <h3 class="text-2xl font-medium mb-4">Get in Touch</h3>
-      <p class="text-gray-700">Email me at <a href="mailto:zhaojocelyn300@gmail.com" class="text-primary underline">zhaojocelyn300@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/zhaojocelyn/" class="text-primary underline">LinkedIn</a>, <a href="https://github.com/jocelynzhao3" class="text-primary underline">GitHub</a>, and more.</p>
-    </section>
-  </main>
-
-  <footer class="py-6 text-center text-gray-500 text-sm">
-    © <span id="year"></span> Jocelyn Zhao. Built with ❤️.
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    lucide.createIcons();
-  </script>
 </body>
 </html>
